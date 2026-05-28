@@ -3,12 +3,24 @@ import { ExternalLink, Github, ChevronRight, Sparkles, Heart, Flower2, Palette, 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "HIF Detection & Interruption System",
-      description: "Advanced AI system for detecting and interrupting harmful interference patterns using machine learning algorithms and real-time monitoring.",
-      techStack: ["Python", "TensorFlow", "OpenCV", "IoT"],
+      title: "ElectraNexus AI | IoT - LSTM - Smart Grid Intelligence",
+      description: "Developed and deployed an AI-assisted intelligent electrical monitoring and protection framework leveraging RCM sensing, DSP-based signal analysis, TDR localization, and LSTM-driven anomaly detection to prevent leakage currents, electric shocks, and unauthorized power usage through smart selective isolation.",
+      techStack: ["IoT", "LSTM", "Smart Grid", "DSP", "AI"],
       featured: true,
       icon: Sparkles,
-      color: "from-pink-500/20 to-rose-500/20"
+      color: "from-pink-500/20 to-rose-500/20",
+      liveLink: "https://electra-nexus-ai-kgr3.vercel.app/login",
+      githubLink: "https://github.com/maheen7860/ElectraNexus-AI"
+    },
+    {
+      title: "AI-Brain Tumor Prediction Web | React - MongoDB - Deep Learning",
+      description: "Developed and deployed a full-stack AI-based platform leveraging a deep learning transfer learning model to predict brain tumors from MRI scans with secure user authentication and responsive web access.",
+      techStack: ["React", "MongoDB", "Deep Learning", "AI", "Transfer Learning"],
+      featured: true,
+      icon: Heart,
+      color: "from-purple-500/20 to-pink-500/20",
+      liveLink: "https://brain-tumour-eight.vercel.app/",
+      githubLink: "https://github.com/maheen7860/BrainTumour"
     },
     {
       title: "IoT & AI-Powered Milk Quality Assurance System",
@@ -16,31 +28,18 @@ const ProjectsSection = () => {
       techStack: ["IoT", "Python", "Machine Learning", "Sensors"],
       featured: true,
       icon: Heart,
-      color: "from-purple-500/20 to-pink-500/20"
+      color: "from-purple-500/20 to-pink-500/20",
+      githubLink: "https://github.com/maheen7860/Milk-Quality-Checker-.git"
     },
     {
-      title: "Orchard Guard",
-      description: "Intelligent monitoring system for orchards using computer vision and AI to detect threats and optimize crop management.",
-      techStack: ["Computer Vision", "Python", "AI", "Agriculture Tech"],
-      featured: false,
-      icon: Flower2,
-      color: "from-emerald-500/20 to-green-500/20"
-    },
-    {
-      title: "InVisiVoice",
-      description: "Innovative voice-based interface system leveraging natural language processing and speech recognition technologies.",
-      techStack: ["NLP", "Speech Recognition", "Python", "AI"],
-      featured: false,
-      icon: Palette,
-      color: "from-blue-500/20 to-purple-500/20"
-    },
-    {
-      title: "Automated Car Parking Management System",
-      description: "Smart parking solution using computer vision and automation to optimize parking space utilization and management.",
-      techStack: ["Computer Vision", "Automation", "Python", "IoT"],
+      title: "Hackathon Mentor - AI Powered Agent | React - LLM - Agentic Workflow",
+      description: "Developed and deployed a full-stack GenAI platform leveraging a 9-phase multi-agent Google Gemini architecture for delivering real-time hackathon and project mentorship through an interactive React dashboard.",
+      techStack: ["React", "LLM", "Agentic Workflow", "Google Gemini", "GenAI"],
       featured: false,
       icon: Crown,
-      color: "from-orange-500/20 to-red-500/20"
+      color: "from-orange-500/20 to-red-500/20",
+      liveLink: "https://hackathon-mentor-agent.vercel.app/",
+      githubLink: "https://github.com/maheen7860/Hackathon-Mentor-Agent"
     }
   ];
 
@@ -124,28 +123,39 @@ const ProjectsSection = () => {
                         ))}
                       </div>
 
-                      {/* Action Button */}
-                      <div className="flex items-center justify-between pt-4">
-                        <button 
-                          onClick={() => {
-                            let url = '';
-                            if (project.title === "IoT & AI-Powered Milk Quality Assurance System") {
-                              url = "https://github.com/maheen7860/Milk-Quality-Checker-.git";
-                            }
-                            if (url) {
-                              window.open(url, '_blank');
-                            }
-                          }}
-                          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-sm font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25 group/btn"
-                        >
-                          <span>Explore Project</span>
-                          <ChevronRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
-                        </button>
-                        
-                        <div className="flex items-center gap-2 text-xs text-pink-600">
-                          <div className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></div>
-                          <span className="font-medium">Live & Active</span>
+                      {/* Action Buttons */}
+                      <div className="flex flex-wrap items-center justify-between gap-4 pt-4">
+                        <div className="flex flex-wrap items-center gap-3">
+                          {project.liveLink && (
+                            <a 
+                              href={project.liveLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-sm font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/25 group/btn"
+                            >
+                              <span>Live Demo</span>
+                              <ExternalLink size={16} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                            </a>
+                          )}
+                          {project.githubLink && (
+                            <a 
+                              href={project.githubLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 hover:bg-white text-foreground hover:text-pink-600 border border-pink-200/50 hover:border-pink-300 text-sm font-medium rounded-full transition-all duration-300 hover:shadow-md group/btn"
+                            >
+                              <Github size={16} />
+                              <span>GitHub</span>
+                            </a>
+                          )}
                         </div>
+                        
+                        {project.liveLink && (
+                          <div className="flex items-center gap-2 text-xs text-pink-600">
+                            <div className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></div>
+                            <span className="font-medium">Live & Active</span>
+                          </div>
+                        )}
                       </div>
                     </div>
 
@@ -183,7 +193,7 @@ const ProjectsSection = () => {
                         <p className="text-sm text-foreground/70 leading-relaxed mb-3">
                           {project.description}
                         </p>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mb-4">
                           {project.techStack.slice(0, 3).map((tech, techIndex) => (
                             <span 
                               key={techIndex}
@@ -198,27 +208,33 @@ const ProjectsSection = () => {
                             </span>
                           )}
                         </div>
-                      </div>
 
-                      {/* Action */}
-                      <button 
-                        onClick={() => {
-                          let url = '';
-                          if (project.title === "Orchard Guard") {
-                            url = "https://github.com/Mohxmd-01/ORCHARD_GUARD.git";
-                          } else if (project.title === "Automated Car Parking Management System") {
-                            url = "https://drive.google.com/file/d/1R62MByK2XHZm1sPKy0hPF4TNAwe3mX3b/view?usp=sharing";
-                          } else if (project.title === "InVisiVoice") {
-                            url = "https://drive.google.com/file/d/1QsEbCblRKgxxFJ3Ey1pGNx0Co6aveRHq/view?usp=sharing";
-                          }
-                          if (url) {
-                            window.open(url, '_blank');
-                          }
-                        }}
-                        className="px-4 py-2 text-sm text-pink-600 hover:text-white hover:bg-pink-500 border border-pink-200 hover:border-pink-500 rounded-full transition-all duration-300 group/btn"
-                      >
-                        <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
-                      </button>
+                        {/* Action Buttons */}
+                        <div className="flex flex-wrap items-center gap-2.5">
+                          {project.liveLink && (
+                            <a 
+                              href={project.liveLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xs font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 hover:shadow-md group/btn"
+                            >
+                              <span>Live Demo</span>
+                              <ExternalLink size={12} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                            </a>
+                          )}
+                          {project.githubLink && (
+                            <a 
+                              href={project.githubLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-white/80 hover:bg-white text-foreground hover:text-pink-600 border border-pink-200/50 hover:border-pink-300 text-xs font-medium rounded-full transition-all duration-300 hover:shadow-sm"
+                            >
+                              <Github size={12} />
+                              <span>GitHub</span>
+                            </a>
+                          )}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
