@@ -86,7 +86,7 @@ const ProjectsSection = () => {
                   <div className="relative p-8 h-full bg-white/70 backdrop-blur-xl border border-white/40 hover:border-pink-200/60 transition-all duration-700 group-hover:shadow-2xl group-hover:shadow-pink-500/10">
                     
                     {/* Elegant Featured Badge */}
-                    <div className="absolute top-6 right-6 px-4 py-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xs font-medium rounded-full shadow-lg animate-pulse-soft">
+                    <div className="absolute top-6 right-6 z-10 px-4 py-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-xs font-medium rounded-full shadow-lg animate-pulse-soft">
                       <span className="flex items-center gap-2">
                         <Sparkles size={12} />
                         Featured
@@ -94,14 +94,14 @@ const ProjectsSection = () => {
                     </div>
                     
                     {/* Floating Icon */}
-                    <div className="absolute top-6 left-6">
+                    <div className="absolute top-6 left-6 z-10">
                       <div className={`w-12 h-12 rounded-2xl bg-gradient-to-r ${project.color} backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-500`}>
                         <IconComponent size={20} className="text-white drop-shadow-sm" />
                       </div>
                     </div>
 
                     {/* Content */}
-                    <div className="mt-16 space-y-6">
+                    <div className="mt-16 space-y-6 relative z-10">
                       <div>
                         <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4 group-hover:text-pink-600 transition-colors duration-500 leading-tight">
                           {project.title}
@@ -160,8 +160,8 @@ const ProjectsSection = () => {
                     </div>
 
                     {/* Elegant Decorative Elements */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl`} />
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-pink-300/20 to-rose-300/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+                    <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl pointer-events-none`} />
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-pink-300/20 to-rose-300/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none" />
                   </div>
                 </div>
               );
@@ -244,11 +244,16 @@ const ProjectsSection = () => {
 
           {/* Centered Call to Action */}
           <div className="flex justify-center mt-16 animate-fade-in-up fade-in-section">
-            <button className="btn-hero inline-flex items-center gap-3 group px-8 py-4 text-base font-medium">
+            <a 
+              href="https://github.com/maheen7860"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero inline-flex items-center gap-3 group px-8 py-4 text-base font-medium"
+            >
               <Sparkles size={18} />
               <span>Discover More Projects</span>
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
