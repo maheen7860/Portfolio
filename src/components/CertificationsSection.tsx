@@ -5,6 +5,7 @@ import udemyCert from '@/assets/udemy-cert.png';
 import awsCert from '@/assets/aws-cert.png';
 import oracleCert from '@/assets/oracle-cert.png';
 import linkedinCert from '@/assets/linkedin-cert.png';
+import microsoftCert from '@/assets/microsoft-cert.png';
 import googleCert from '@/assets/google-cert.png';
 import internshalaCert from '@/assets/internshala-cert.png';
 import infosysCert from '@/assets/infosys-cert.png';
@@ -16,149 +17,154 @@ const CertificationsSection = () => {
   const showMore = () => setVisibleCount((prev) => prev + 6);
 
   const certifications = [
+    // ================= MICROSOFT =================
     {
-      title: "Artificial Intelligence Primer",
-      issuer: "Infosys Springboard",
-      category: "AI/ML",
-      year: "2024",
-      image: infosysCert,
-      link: "https://drive.google.com/file/d/1HEDPx37p9s4KG_4_Ebrn1FUgTTjJfwd7/view?usp=sharing"
+      title: "Microsoft Certified: Azure Developer Associate",
+      issuer: "Microsoft",
+      category: "Cloud Computing",
+      year: "2026",
+      image: microsoftCert,
+      link: "https://drive.google.com/file/d/1q53BAbTBMDdcUvNld20ZgtDbrxFVh9S6/view?usp=sharing"
     },
+
+    // ================= ORACLE =================
     {
-      title: "Python Foundation",
-      issuer: "Infosys Springboard",
-      category: "AI/ML",
-      year: "2024",
-      image: infosysCert,
-      link: "https://drive.google.com/file/d/1x4VWXUFKBeV1f2D74TxJSeQ8s1szKZn4/view?usp=sharing"
-    },
-    {
-      title: "Java Foundation",
-      issuer: "Infosys Springboard",
-      category: "AI/ML",
-      year: "2024",
-      image: infosysCert,
-      link: "https://drive.google.com/file/d/1aNnQPzlCAl14IEORwFh9W46y0f02xnR9/view?usp=sharing"
-    },
-    {
-      title: "Principles of Generative AI",
-      issuer: "Infosys Springboard", 
-      category: "AI/ML",
-      year: "2024",
-      image: infosysCert,
-      link: "https://drive.google.com/file/d/1n2HwyMaBCgdWE3qjaV7QksY4X9Ot22sI/view?usp=sharing"
-    },
-    {
-      title: "Oracle AI Vector Search Certified Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
-      year: "2025",
+      title: "Oracle Certified Professional: Java SE 17 Developer",
+      issuer: "Oracle",
+      category: "Java Development",
+      year: "2026",
       image: oracleCert,
-      link: "https://drive.google.com/file/d/1kgJc2K9O9QNgrtqROjjdlcq7IiIY0t4c/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1ykp_ACHw8fKEHSdK-fvQJI-gN4FmGiJD/view?usp=sharing"
     },
     {
       title: "Oracle Cloud Infrastructure Generative AI Professional",
-      issuer: "Oracle", 
+      issuer: "Oracle",
       category: "AI/ML",
       year: "2025",
       image: oracleCert,
       link: "https://drive.google.com/file/d/1Vy9pL3ifD72MS8J_MZrorEY_J4VSbGKq/view?usp=sharing"
     },
     {
-      title: " Oracle Cloud Infrastructure Data Science Professional",
-      issuer: "Oracle", 
+      title: "Oracle AI Vector Search Certified Professional",
+      issuer: "Oracle",
       category: "AI/ML",
       year: "2025",
       image: oracleCert,
-      link: "https://drive.google.com/file/d/1_yHOSat6RUystWL6NKDh7izO2nwGXHJT/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1kgJc2K9O9QNgrtqROjjdlcq7IiIY0t4c/view?usp=sharing"
     },
     {
-      title: "Oracle Analytics Cloud 2025 Certified Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      title: "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
+      issuer: "Oracle",
+      category: "Cloud Computing",
       year: "2025",
       image: oracleCert,
-      link: "https://drive.google.com/file/d/1YBMVkM_s0bj5FqfjzLg6tuacYWlA7P5B/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1QNKlKFgDmGcPR1B-ig8cfl2ipq2v7Xc0/view?usp=sharing"
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Certified Architect Associate",
+      issuer: "Oracle",
+      category: "Cloud Computing",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1-bp-DBGecg6iSgnBEX9KK0Ghbk43mq9v/view?usp=sharing"
     },
     {
       title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      issuer: "Oracle",
+      category: "DevOps",
       year: "2025",
       image: oracleCert,
       link: "https://drive.google.com/file/d/1Ew6-gOzzeUXqQbsKdZA4sLZF4_UceECf/view?usp=sharing"
     },
     {
-      title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      title: "Oracle Cloud Infrastructure Data Science Professional",
+      issuer: "Oracle",
+      category: "Data Science",
       year: "2025",
       image: oracleCert,
-      link: "https://drive.google.com/file/d/18eQW7sQEFCN7XbJyBotkz6KmTCYnkoVV/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1_yHOSat6RUystWL6NKDh7izO2nwGXHJT/view?usp=sharing"
     },
     {
-      title: "Oracle Data Platform 2025 Certified Foundations Associate",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      title: "Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional",
+      issuer: "Oracle",
+      category: "Cloud Computing",
       year: "2025",
       image: oracleCert,
-      link: "https://drive.google.com/file/d/1y3VTxeVLaHMd4yCQv6-vO1QdwtiLR2mY/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1fmwvPJa2P_mdiYuZqWDQHv4AfWyXIURo/view?usp=sharing"
     },
     {
       title: "Oracle Database@AWS Certified Architect Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      issuer: "Oracle",
+      category: "Cloud Computing",
       year: "2025",
       image: oracleCert,
       link: "https://drive.google.com/file/d/1K61Sufe7uAlZcmeOxNQty66jV3riirZM/view?usp=sharing"
     },
     {
       title: "Oracle Cloud Infrastructure 2025 Migration Architect Certified Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      issuer: "Oracle",
+      category: "Cloud Computing",
       year: "2025",
       image: oracleCert,
       link: "https://drive.google.com/file/d/14WTn4q3qRSqdczmGr_2wIAOkZRB2eZkw/view?usp=sharing"
     },
     {
       title: "Oracle APEX Cloud Developer Certified Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      issuer: "Oracle",
+      category: "Web Development",
       year: "2025",
       image: oracleCert,
       link: "https://drive.google.com/file/d/1KRFu-DTBu6joB29RuVJChC0GxzXtnUf2/view?usp=sharing"
     },
     {
+      title: "Oracle Analytics Cloud 2025 Certified Professional",
+      issuer: "Oracle",
+      category: "Analytics",
+      year: "2025",
+      image: oracleCert,
+      link: "https://drive.google.com/file/d/1YBMVkM_s0bj5FqfjzLg6tuacYWlA7P5B/view?usp=sharing"
+    },
+    {
       title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
-      issuer: "Oracle", 
+      issuer: "Oracle",
       category: "AI/ML",
       year: "2025",
       image: oracleCert,
       link: "https://drive.google.com/file/d/1y6THHnPpXL0v_d_9JA0_6z92gxXsGF_V/view?usp=sharing"
     },
     {
-      title: "Oracle Cloud Infrastructure 2025 Certified Architect Associate",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      title: "Oracle Data Platform 2025 Certified Foundations Associate",
+      issuer: "Oracle",
+      category: "Database",
       year: "2025",
       image: oracleCert,
-      link: "https://drive.google.com/file/d/1-bp-DBGecg6iSgnBEX9KK0Ghbk43mq9v/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1y3VTxeVLaHMd4yCQv6-vO1QdwtiLR2mY/view?usp=sharing"
     },
     {
-      title: "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
+      title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+      issuer: "Oracle",
+      category: "Cloud Computing",
       year: "2025",
       image: oracleCert,
-      link: "https://drive.google.com/file/d/1QNKlKFgDmGcPR1B-ig8cfl2ipq2v7Xc0/view?usp=sharing"
+      link: "https://drive.google.com/file/d/18eQW7sQEFCN7XbJyBotkz6KmTCYnkoVV/view?usp=sharing"
     },
-     {
-      title: "Oracle Cloud Infrastructure 2025 Certified Multicloud Architect Professional",
-      issuer: "Oracle", 
-      category: "AI/ML",
-      year: "2025",
-      image: oracleCert,
-      link: "https://drive.google.com/file/d/1fmwvPJa2P_mdiYuZqWDQHv4AfWyXIURo/view?usp=sharing"
+
+    // ================= NPTEL =================
+    {
+      title: "Introduction to Industry 4.0 and Industrial Internet of Things",
+      issuer: "NPTEL",
+      category: "Industrial IoT",
+      year: "2026",
+      image: nptelCert,
+      link: "https://drive.google.com/file/d/1tdt1q67KEb78EKWx4FSwHSiOzlId34S9/view?usp=sharing"
+    },
+    {
+      title: "Computer Networks And Internet Protocol",
+      issuer: "NPTEL",
+      category: "Networking",
+      year: "2024",
+      image: nptelCert,
+      link: "https://drive.google.com/file/d/1PplKpVpDE4K1M3iq6vpWoBJLdQ9FA7Wy/view?usp=sharing"
     },
     {
       title: "Enhancing Soft Skills and Personality",
@@ -168,29 +174,49 @@ const CertificationsSection = () => {
       image: nptelCert,
       link: "https://drive.google.com/file/d/12E8x_kxXwt6Pq_pS-JnTt12KsJstnOU2/view?usp=sharing"
     },
+
+    // ================= INFOSYS =================
     {
-      title: "Computer Networks And Internet Protocol",
-      issuer: "NPTEL",
-      category: "Professional Development",
+      title: "Artificial Intelligence Primer",
+      issuer: "Infosys Springboard",
+      category: "AI/ML",
       year: "2024",
-      image: nptelCert,
-      link: "https://drive.google.com/file/d/1PplKpVpDE4K1M3iq6vpWoBJLdQ9FA7Wy/view?usp=sharing"
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1HEDPx37p9s4KG_4_Ebrn1FUgTTjJfwd7/view?usp=sharing"
     },
     {
-      title: "Android App Development",
-      issuer: "Internshala",
-      category: "Mobile Development",
+      title: "Principles of Generative AI",
+      issuer: "Infosys Springboard",
+      category: "AI/ML",
       year: "2024",
-      image: internshalaCert,
-      link: "https://drive.google.com/file/d/1btDWxrg6hy88RWq1GOpZ1f08yegycRBp/view?usp=sharing"
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1n2HwyMaBCgdWE3qjaV7QksY4X9Ot22sI/view?usp=sharing"
     },
     {
-      title: "Google Analytics",
-      issuer: "Google",
-      category: "Analytics",
+      title: "Python Foundation",
+      issuer: "Infosys Springboard",
+      category: "Programming",
       year: "2024",
-      image: googleCert,
-      link: "https://drive.google.com/file/d/1Q_ND480TWg0jsXFZUplc_ln5OKNpfPQB/view?usp=sharing"
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1x4VWXUFKBeV1f2D74TxJSeQ8s1szKZn4/view?usp=sharing"
+    },
+    {
+      title: "Java Foundation",
+      issuer: "Infosys Springboard",
+      category: "Java Development",
+      year: "2024",
+      image: infosysCert,
+      link: "https://drive.google.com/file/d/1aNnQPzlCAl14IEORwFh9W46y0f02xnR9/view?usp=sharing"
+    },
+
+    // ================= OTHER CERTIFICATIONS =================
+    {
+      title: "Solution Architecture",
+      issuer: "AWS",
+      category: "Cloud Computing",
+      year: "2024",
+      image: awsCert,
+      link: "https://drive.google.com/file/d/1cSNppIrrIAXq5RBRQgOGlZq1cvUPXWz2/view?usp=sharing"
     },
     {
       title: "Generative AI",
@@ -201,12 +227,20 @@ const CertificationsSection = () => {
       link: "https://drive.google.com/file/d/1YF7mI7HFXiD02rURS_iIZIyqtIEqTspU/view?usp=sharing"
     },
     {
-      title: "Solution Architecture",
-      issuer: "AWS",
-      category: "Cloud Computing",
+      title: "Google Analytics",
+      issuer: "Google",
+      category: "Analytics",
       year: "2024",
-      image: awsCert,
-      link: "https://drive.google.com/file/d/1cSNppIrrIAXq5RBRQgOGlZq1cvUPXWz2/view?usp=sharing"
+      image: googleCert,
+      link: "https://drive.google.com/file/d/1Q_ND480TWg0jsXFZUplc_ln5OKNpfPQB/view?usp=sharing"
+    },
+    {
+      title: "Android App Development",
+      issuer: "Internshala",
+      category: "Mobile Development",
+      year: "2024",
+      image: internshalaCert,
+      link: "https://drive.google.com/file/d/1btDWxrg6hy88RWq1GOpZ1f08yegycRBp/view?usp=sharing"
     },
     {
       title: "Database with Python",
@@ -217,17 +251,17 @@ const CertificationsSection = () => {
       link: "https://drive.google.com/file/d/18-BcraIOFhcttLUcr14pd2fgkPbI_bj7/view?usp=sharing"
     },
     {
-      title: "Technology	Job	Simulation",
+      title: "Technology Job Simulation",
       issuer: "Deloitte",
-      category: "General",
+      category: "Professional Experience",
       year: "2024",
       image: Deloittecert,
       link: "https://drive.google.com/file/d/1B0pjsWluiB0SxGIHAo9AKq7wjKhG9CEZ/view?usp=sharing"
     },
-     {
-      title: " Data	Analytics	Job	Simulation",
+    {
+      title: "Data Analytics Job Simulation",
       issuer: "Deloitte",
-      category: "General",
+      category: "Analytics",
       year: "2024",
       image: Deloittecert,
       link: "https://drive.google.com/file/d/1hdcw3Hu-kuDO0cEOXhl6Zqwl_hQTdyN6/view?usp=sharing"
@@ -248,7 +282,7 @@ const CertificationsSection = () => {
       {/* Background Elements */}
       <div className="absolute top-16 right-20 w-40 h-40 bg-accent/5 rounded-full blur-3xl" />
       <div className="absolute bottom-16 left-20 w-32 h-32 bg-primary/5 rounded-full blur-2xl" />
-      
+
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -263,22 +297,21 @@ const CertificationsSection = () => {
           {/* Certifications Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.slice(0, visibleCount).map((cert, index) => (
-              <div 
+              <div
                 key={index}
-                className={`group glass-card p-6 rounded-3xl hover:shadow-glow hover:scale-105 transition-all duration-500 animate-fade-in-up ${
-                  index < 3 ? 'stagger-1' : index < 6 ? 'stagger-2' : 'stagger-3'
-                }`}
+                className={`group glass-card p-6 rounded-3xl hover:shadow-glow hover:scale-105 transition-all duration-500 animate-fade-in-up ${index < 3 ? 'stagger-1' : index < 6 ? 'stagger-2' : 'stagger-3'
+                  }`}
               >
                 {/* Certificate Frame */}
                 <div className="relative mb-6">
                   <div className="w-full h-32 bg-gradient-card rounded-2xl border border-white/20 flex items-center justify-center relative overflow-hidden">
                     {/* Certificate Logo */}
-                    <img 
-                      src={cert.image} 
+                    <img
+                      src={cert.image}
                       alt={`${cert.issuer} Certificate`}
                       className="h-16 w-auto object-contain"
                     />
-                    
+
                     {/* Verified Badge */}
                     <div className="absolute top-3 right-3">
                       <CheckCircle className="w-5 h-5 text-primary" />
@@ -291,7 +324,7 @@ const CertificationsSection = () => {
                   <h3 className="font-serif font-semibold text-lg text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
                     {cert.title}
                   </h3>
-                  
+
                   <div className="flex items-center justify-between">
                     <span className="text-foreground/70 font-medium text-sm">
                       {cert.issuer}
@@ -300,43 +333,43 @@ const CertificationsSection = () => {
                       {cert.year}
                     </span>
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
                     <span className={`px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20`}>
                       {cert.category}
                     </span>
-                    
-                    <button 
+
+                    <button
                       onClick={() => window.open(cert.link, "_blank")}
                       className="text-primary hover:text-primary/80 transition-colors group/btn">
                       <ExternalLink size={16} className="group-hover/btn:scale-110 transition-transform" />
-                      </button>
+                    </button>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-                {/* Show More Button */}
-                 {visibleCount < certifications.length ? (
-  <div className="text-center mt-10">
-    <button
-      onClick={() => setVisibleCount(prev => prev + 6)}
-      className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-    >
-      Show More
-    </button>
-  </div>
-) : certifications.length > 6 && (
-  <div className="text-center mt-10">
-    <button
-      onClick={() => setVisibleCount(6)}
-      className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-    >
-      Show Less
-    </button>
-  </div>
-)}
+          {/* Show More Button */}
+          {visibleCount < certifications.length ? (
+            <div className="text-center mt-10">
+              <button
+                onClick={() => setVisibleCount(prev => prev + 6)}
+                className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Show More
+              </button>
+            </div>
+          ) : certifications.length > 6 && (
+            <div className="text-center mt-10">
+              <button
+                onClick={() => setVisibleCount(6)}
+                className="px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Show Less
+              </button>
+            </div>
+          )}
 
           {/* Special Achievement */}
           <div className="mt-16 text-center animate-fade-in-up stagger-4">
@@ -360,7 +393,7 @@ const CertificationsSection = () => {
                 Commitment to Excellence
               </h3>
               <p className="text-foreground/70 leading-relaxed mb-6">
-                With {certifications.length}+ professional certifications across AI/ML, development, and business skills, 
+                With {certifications.length}+ professional certifications across AI/ML, development, and business skills,
                 I continuously invest in learning cutting-edge technologies and industry best practices.
               </p>
               <div className="flex items-center justify-center gap-2 text-primary">
